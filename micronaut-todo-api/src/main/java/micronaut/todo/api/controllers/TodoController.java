@@ -6,7 +6,7 @@ import micronaut.todo.api.repositories.TodoRepository;
 
 import javax.inject.Inject;
 
-@Controller("/hello")
+@Controller("/todos")
 public class TodoController {
 
 	@Inject
