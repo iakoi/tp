@@ -1,4 +1,4 @@
-package micronaut.todo.api.domain;
+package micronaut.todo.api.domains;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,7 +14,6 @@ public class TodoEntity {
 	private String content;
 
 	public Long getId() {
-
 		return id;
 	}
 

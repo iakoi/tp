@@ -41,6 +41,7 @@ dependencies {
     compile 'io.micronaut.data:micronaut-data-hibernate-jpa:1.0.0.M1'
     runtime 'com.h2database:h2'
     runtime 'io.micronaut.configuration:micronaut-jdbc-hikari'
+    runtime 'org.postgresql:postgresql:42.2.4'
 
     // REST
     compile 'io.micronaut:micronaut-http-server-netty'
