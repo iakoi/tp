@@ -1,8 +1,8 @@
-package micronaut.todo.api.controllers;
+package mn.app.controllers;
 
 import io.micronaut.http.annotation.*;
-import micronaut.todo.api.domains.TodoEntity;
-import micronaut.todo.api.repositories.TodoRepository;
+import mn.app.domains.TodoEntity;
+import mn.app.repositories.TodoRepository;
 
 import javax.inject.Inject;
 

@@ -1,0 +1,20 @@
+micronaut:
+  application:
+    name: todo-api
+datasources:
+  default:
+    url: ${JDBC_URL}
+    username: ${JDBC_USER}
+    password: ${JDBC_PASSWORD}
+    driverClassName: org.postgresql.Driver
+
+jpa:
+  default:
+    packages-to-scan:
+      - 'mn.app.domains'
+      - 'mn.app.repositories'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true

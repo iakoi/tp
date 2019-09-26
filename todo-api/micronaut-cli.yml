@@ -1,5 +1,5 @@
 profile: service
-defaultPackage: micronaut.todo.api
+defaultPackage: mn.app
 ---
 testFramework: junit
 sourceLanguage: java

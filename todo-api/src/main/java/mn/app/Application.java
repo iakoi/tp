@@ -1,4 +1,4 @@
-package micronaut.todo.api;
+package mn.app;
 
 import io.micronaut.runtime.Micronaut;
 

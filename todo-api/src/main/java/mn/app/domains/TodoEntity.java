@@ -1,4 +1,4 @@
-package micronaut.todo.api.domains;
+package mn.app.domains;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

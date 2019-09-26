@@ -1,8 +1,8 @@
-package micronaut.todo.api.repositories;
+package mn.app.repositories;
 
 import io.micronaut.data.annotation.Repository;
 import io.micronaut.data.repository.CrudRepository;
-import micronaut.todo.api.domains.TodoEntity;
+import mn.app.domains.TodoEntity;
 
 @Repository
 public interface TodoRepository extends CrudRepository<TodoEntity, Long> {
