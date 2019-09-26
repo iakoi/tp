@@ -1,0 +1,33 @@
+version: '3.3'
+services:
+  api:
+    image: jrec/mn-todo:1.0
+    ports:
+      - ${API_PORT:-8000}:8080
+    environment:
+      JDBC_URL: ${JDBC_URL:-postgres}
+      JDBC_USER: ${JDBC_USER:-postgres}
+      JDBC_PASSWORD: ${JDBC_PASSWORD}
+    depends_on:
+      - db
+    networks:
+      default-network:
+        aliases:
+          - api
+  db:
+    image: postgres:10.1-alpine
+    volumes:
+      - /tmp/mnapi:/var/lib/postgresql/data/db
+    environment:
+      POSTGRES_USER: ${JDBC_USER:-postgres}
+      POSTGRES_PASSWORD: ${JDBC_PASSWORD:-postgres}
+      POSTGRES_DB: todo
+      PGDATA: /var/lib/postgresql/data/db/pgdata
+    networks:
+      default-network:
+        aliases:
+          - db
+
+networks:
+  default-network:
+
